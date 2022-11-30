@@ -2,13 +2,12 @@ import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import Background from "./Background";
 import Btn from "./Btn";
-import { darkGreen, pink } from "./Constants";
 
 const Home = (props) => {
   return (
     <Background>
       <View style={{ marginHorizontal: 40, marginVertical: 100 }}>
-        <Text style={{ color: "pink", fontSize: 64, left: 60 }}>Guess</Text>
+        <Text style={{ color: "white", fontSize: 64, left: 60 }}>Guess</Text>
         <Text
           style={{
             color: "white",

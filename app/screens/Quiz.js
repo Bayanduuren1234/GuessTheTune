@@ -103,7 +103,7 @@ const Quiz = () => {
         <Text
           style={{
             color: COLORS.white,
-            fontSize: 30,
+            fontSize: 20,
           }}
         >
           {allQuestions[currentQuestionIndex]?.question}
@@ -142,9 +142,8 @@ const Quiz = () => {
               marginVertical: 10,
             }}
           >
-            <Text style={{ fontSize: 20, color: COLORS.white }}>{option}</Text>
+            <Text style={{ fontSize: 16, color: COLORS.white }}>{option}</Text>
 
-            {/* Show Check Or Cross Icon based on correct answer*/}
             {option == correctOption ? (
               <View
                 style={{
@@ -296,7 +295,7 @@ const Quiz = () => {
                 alignItems: "center",
               }}
             >
-              <Text style={{ fontSize: 30, fontWeight: "bold" }}>
+              <Text style={{ fontSize: 30, fontWeight: "bold", color: "pink" }}>
                 {score > allQuestions.length / 2 ? "Congratulations!" : "Oops!"}
               </Text>
 
@@ -332,7 +331,7 @@ const Quiz = () => {
               <TouchableOpacity
                 onPress={restartQuiz}
                 style={{
-                  backgroundColor: COLORS.accent,
+                  backgroundColor: "pink",
                   padding: 20,
                   width: "100%",
                   borderRadius: 20,
@@ -341,7 +340,7 @@ const Quiz = () => {
                 <Text
                   style={{
                     textAlign: "center",
-                    color: COLORS.white,
+                    color: "white",
                     fontSize: 20,
                   }}
                 >

@@ -2,7 +2,6 @@ import React from "react";
 import { View, Text, Touchable, TouchableOpacity } from "react-native";
 import Background from "./Background";
 import Btn from "./Btn";
-import { darkGreen } from "./Constants";
 import Field from "./Field";
 const Login = (props) => {
   return (
@@ -14,21 +13,33 @@ const Login = (props) => {
             fontSize: 64,
             fontWeight: "bold",
             marginVertical: 20,
+            left: -20,
+            marginTop: 50,
           }}
         >
           Login
         </Text>
         <View
           style={{
+            marginTop: 80,
             backgroundColor: "white",
-            height: 700,
-            width: 460,
+            height: 500,
+            width: 390,
+            marginRight: 50,
+            marginLeft: 5,
             borderTopLeftRadius: 130,
-            paddingTop: 100,
+            borderBottomRightRadius: 130,
+            paddingTop: 60,
             alignItems: "center",
           }}
         >
-          <Text style={{ fontSize: 40, color: darkGreen, fontWeight: "bold" }}>
+          <Text
+            style={{
+              fontSize: 35,
+              color: "pink",
+              fontWeight: "bold",
+            }}
+          >
             Welcome Back
           </Text>
           <Text
@@ -36,13 +47,13 @@ const Login = (props) => {
               color: "grey",
               fontSize: 19,
               fontWeight: "bold",
-              marginBottom: 20,
+              marginBottom: 10,
             }}
           >
             Login to your account
           </Text>
           <Field
-            placeholder="Email / Username"
+            placeholder="Email or Username"
             keyboardType={"email-address"}
           />
           <Field placeholder="Password" secureTextEntry={true} />
@@ -51,18 +62,16 @@ const Login = (props) => {
               alignItems: "flex-end",
               width: "78%",
               paddingRight: 16,
-              marginBottom: 200,
+              marginBottom: 90,
             }}
           >
-            <Text
-              style={{ color: darkGreen, fontWeight: "bold", fontSize: 16 }}
-            >
+            <Text style={{ color: "grey", fontWeight: "bold", fontSize: 14 }}>
               Forgot Password ?
             </Text>
           </View>
           <Btn
             textColor="white"
-            bgColor={darkGreen}
+            bgColor="pink"
             btnLabel="Login"
             Press={() => {
               props.navigation.navigate("Type");
@@ -75,15 +84,13 @@ const Login = (props) => {
               justifyContent: "center",
             }}
           >
-            <Text style={{ fontSize: 16, fontWeight: "bold" }}>
+            <Text style={{ fontSize: 14, fontWeight: "bold", color: "grey" }}>
               Don't have an account ?{" "}
             </Text>
             <TouchableOpacity
               onPress={() => props.navigation.navigate("Signup")}
             >
-              <Text
-                style={{ color: darkGreen, fontWeight: "bold", fontSize: 16 }}
-              >
+              <Text style={{ color: "pink", fontWeight: "bold", fontSize: 16 }}>
                 Signup
               </Text>
             </TouchableOpacity>

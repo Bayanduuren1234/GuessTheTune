@@ -7,7 +7,6 @@ import Login from "./src/Login";
 import { SafeAreaView, Text } from "react-native";
 import Quiz from "./app/screens/Quiz";
 import Type from "./src/Type";
-// import { Quiz } from "./app/screens";
 
 const Stack = createNativeStackNavigator();
 
