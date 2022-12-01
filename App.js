@@ -7,7 +7,7 @@ import Login from "./src/Login";
 import { SafeAreaView, Text } from "react-native";
 import Quiz from "./app/screens/Quiz";
 import Type from "./src/Type";
-
+import QuizSong from "./app/screens/QuizSong";
 const Stack = createNativeStackNavigator();
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Quiz" component={Quiz} />
         <Stack.Screen name="Type" component={Type} />
+        {/* <Stack.Screen name="QuizSong" component={QuizSong} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );

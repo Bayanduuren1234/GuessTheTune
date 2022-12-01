@@ -7,27 +7,37 @@ const Type = (props) => {
   return (
     <Background>
       <View style={{ marginHorizontal: 40, marginVertical: 100 }}>
-        <Text style={{ color: "white", fontSize: 64, left: 60 }}>Choose</Text>
+        <Text style={{ color: "white", fontSize: 45, left: 10 }}>
+          Тоглох хэлбэр
+        </Text>
         <Text
-          style={{
-            color: "white",
-            fontSize: 64,
-            marginBottom: 40,
-            left: 10,
-          }}
+          style={{ color: "white", fontSize: 45, left: 90, marginBottom: 80 }}
         >
-          Your Type
+          сонгох
         </Text>
         <Btn
-          bgColor="pink"
-          textColor="white"
-          btnLabel="Solo Player"
+          bgColor="white"
+          textColor="pink"
+          btnLabel="Дууны үг таах"
           Press={() => props.navigation.navigate("Quiz")}
         />
         <Btn
           bgColor="white"
           textColor="pink"
-          btnLabel="2 Player"
+          btnLabel="Дуучин таах"
+          Press={() => props.navigation.navigate("QuizSong")}
+        />
+
+        <Btn
+          bgColor="white"
+          textColor="pink"
+          btnLabel="Дууны ая таах"
+          Press={() => props.navigation.navigate("Multiplayer")}
+        />
+        <Btn
+          bgColor="white"
+          textColor="pink"
+          btnLabel="Найзтайгаа тоглох"
           Press={() => props.navigation.navigate("Multiplayer")}
         />
       </View>

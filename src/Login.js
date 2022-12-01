@@ -14,14 +14,14 @@ const Login = (props) => {
             fontWeight: "bold",
             marginVertical: 20,
             left: -20,
-            marginTop: 50,
+            marginTop: 80,
           }}
         >
-          Login
+          Нэвтрэх
         </Text>
         <View
           style={{
-            marginTop: 80,
+            marginTop: 60,
             backgroundColor: "white",
             height: 500,
             width: 390,
@@ -40,23 +40,23 @@ const Login = (props) => {
               fontWeight: "bold",
             }}
           >
-            Welcome Back
+            Тавтай морил
           </Text>
           <Text
             style={{
               color: "grey",
-              fontSize: 19,
+              fontSize: 16,
               fontWeight: "bold",
               marginBottom: 10,
             }}
           >
-            Login to your account
+            Бүртгэлээрээ нэвтрэх
           </Text>
           <Field
-            placeholder="Email or Username"
+            placeholder="Имэйл эсвэл Нэвтрэх нэр"
             keyboardType={"email-address"}
           />
-          <Field placeholder="Password" secureTextEntry={true} />
+          <Field placeholder="Нууц үг" secureTextEntry={true} />
           <View
             style={{
               alignItems: "flex-end",
@@ -66,13 +66,13 @@ const Login = (props) => {
             }}
           >
             <Text style={{ color: "grey", fontWeight: "bold", fontSize: 14 }}>
-              Forgot Password ?
+              Нууц үгээ мартсан уу?
             </Text>
           </View>
           <Btn
             textColor="white"
             bgColor="pink"
-            btnLabel="Login"
+            btnLabel="Нэвтрэх"
             Press={() => {
               props.navigation.navigate("Type");
             }}
@@ -85,13 +85,13 @@ const Login = (props) => {
             }}
           >
             <Text style={{ fontSize: 14, fontWeight: "bold", color: "grey" }}>
-              Don't have an account ?{" "}
+              Бүртгэл үүсгэх үү ?{" "}
             </Text>
             <TouchableOpacity
               onPress={() => props.navigation.navigate("Signup")}
             >
               <Text style={{ color: "pink", fontWeight: "bold", fontSize: 16 }}>
-                Signup
+                Бүртгүүлэх
               </Text>
             </TouchableOpacity>
           </View>

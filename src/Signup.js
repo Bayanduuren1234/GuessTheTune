@@ -17,7 +17,7 @@ const Signup = (props) => {
             left: -20,
           }}
         >
-          Register
+          Бүртгүүлэх
         </Text>
         <Text
           style={{
@@ -28,7 +28,7 @@ const Signup = (props) => {
             left: -20,
           }}
         >
-          Create a new account
+          Шинээр бүртгэл үүсгэх
         </Text>
         <View
           style={{
@@ -44,15 +44,15 @@ const Signup = (props) => {
             alignItems: "center",
           }}
         >
-          <Field placeholder="First Name" />
-          <Field placeholder="Last Name" />
+          <Field placeholder="Овог" />
+          <Field placeholder="Нэр" />
           <Field
-            placeholder="Email / Username"
+            placeholder="Имэйл эсвэл Нэвтрэх нэр"
             keyboardType={"email-address"}
           />
-          <Field placeholder="Contact Number" keyboardType={"number"} />
-          <Field placeholder="Password" secureTextEntry={true} />
-          <Field placeholder="Confirm Password" secureTextEntry={true} />
+          <Field placeholder="Дугаар" keyboardType={"number"} />
+          <Field placeholder="Нууц үг" secureTextEntry={true} />
+          <Field placeholder="Нууц үг давтах" secureTextEntry={true} />
           <View
             style={{
               display: "flex",
@@ -76,7 +76,7 @@ const Signup = (props) => {
           <Btn
             textColor="white"
             bgColor="pink"
-            btnLabel="Signup"
+            btnLabel="Бүртгүүлэх"
             Press={() => {
               alert("Accoutn created");
               props.navigation.navigate("Login");
@@ -90,13 +90,13 @@ const Signup = (props) => {
             }}
           >
             <Text style={{ fontSize: 14, fontWeight: "bold", color: "grey" }}>
-              Already have an account ?{" "}
+              Хэрэв та бүртгэлтэй бол ?{" "}
             </Text>
             <TouchableOpacity
               onPress={() => props.navigation.navigate("Login")}
             >
               <Text style={{ color: "pink", fontWeight: "bold", fontSize: 16 }}>
-                Login
+                Нэвтрэх
               </Text>
             </TouchableOpacity>
           </View>

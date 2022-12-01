@@ -7,27 +7,22 @@ const Home = (props) => {
   return (
     <Background>
       <View style={{ marginHorizontal: 40, marginVertical: 100 }}>
-        <Text style={{ color: "white", fontSize: 64, left: 60 }}>Guess</Text>
         <Text
-          style={{
-            color: "white",
-            fontSize: 64,
-            marginBottom: 40,
-            left: 10,
-          }}
+          style={{ color: "white", fontSize: 64, left: 10, marginBottom: 100 }}
         >
-          The Song
+          Аяыг Таа
         </Text>
+
         <Btn
           bgColor="pink"
           textColor="white"
-          btnLabel="Login"
+          btnLabel="Нэвтрэх"
           Press={() => props.navigation.navigate("Login")}
         />
         <Btn
           bgColor="white"
           textColor="pink"
-          btnLabel="Signup"
+          btnLabel="Бүртгүүлэх"
           Press={() => props.navigation.navigate("Signup")}
         />
       </View>

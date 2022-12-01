@@ -1,3 +1,4 @@
+// Дууны үг таах QUIZ
 import React, { useState } from "react";
 import {
   View,
