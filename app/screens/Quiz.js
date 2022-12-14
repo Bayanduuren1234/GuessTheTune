@@ -297,7 +297,7 @@ const Quiz = () => {
               }}
             >
               <Text style={{ fontSize: 30, fontWeight: "bold", color: "pink" }}>
-                {score > allQuestions.length / 2 ? "Congratulations!" : "Oops!"}
+                {score > allQuestions.length / 2 ? "Баяр хүргэе!" : "Oops!"}
               </Text>
 
               <View
@@ -345,7 +345,7 @@ const Quiz = () => {
                     fontSize: 20,
                   }}
                 >
-                  Retry Quiz
+                  Дахиж тоглох
                 </Text>
               </TouchableOpacity>
             </View>

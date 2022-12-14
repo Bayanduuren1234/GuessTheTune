@@ -32,13 +32,13 @@ const Type = (props) => {
           bgColor="white"
           textColor="pink"
           btnLabel="Дууны ая таах"
-          Press={() => props.navigation.navigate("Multiplayer")}
+          Press={() => props.navigation.navigate("Quiz")}
         />
         <Btn
           bgColor="white"
           textColor="pink"
           btnLabel="Найзтайгаа тоглох"
-          Press={() => props.navigation.navigate("Multiplayer")}
+          Press={() => props.navigation.navigate("Quiz")}
         />
       </View>
     </Background>

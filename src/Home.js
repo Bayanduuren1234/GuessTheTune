@@ -2,7 +2,6 @@ import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import Background from "./Background";
 import Btn from "./Btn";
-
 const Home = (props) => {
   return (
     <Background>

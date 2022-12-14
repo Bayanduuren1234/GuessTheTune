@@ -4,10 +4,9 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "./src/Home";
 import Signup from "./src/Signup";
 import Login from "./src/Login";
-import { SafeAreaView, Text } from "react-native";
 import Quiz from "./app/screens/Quiz";
 import Type from "./src/Type";
-import QuizSong from "./app/screens/QuizSong";
+// import QuizSong from "./app/screens/QuizSong";
 const Stack = createNativeStackNavigator();
 
 function App() {
